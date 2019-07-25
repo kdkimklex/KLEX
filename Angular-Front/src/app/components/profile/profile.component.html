@@ -1,0 +1,37 @@
+
+
+<form>
+    <fieldset>
+        <legend>My Profile</legend>
+        <div class="form-group" *ngIf="user">
+            <label for="exampleInputUserName" >Full Name</label>
+            <input type="email" class="form-control"  aria-describedby="emailHelp" id="exampleInputUserName" placeholder="{{user.username}}" name="name" [(ngModel)]="username" >
+        </div>
+        <div class="form-group" *ngIf="user">
+            <label for="exampleInputName" >Username </label>
+            <input type="email" class="form-control"  aria-describedby="emailHelp" id="exampleInputName" placeholder="{{user.name}}"  name="username" [(ngModel)]="name">
+        </div>
+        <div class="form-group" *ngIf="user" >
+            <label for="exampleInputEmail1" >Email address </label>
+            <input type="email" class="form-control"  aria-describedby="emailHelp" id="exampleInputEmail1" placeholder="{{user.email}}"  name="email" [(ngModel)]="email" >
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group" *ngIf="user" >
+            <label for="exampleInputPassword1" >Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" [(ngModel)]="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Profile</button>
+    </fieldset>
+</form>
+
+&nbsp;&nbsp;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="card text-white bg-secondary mb-3" style="max-width: 40rem;">
+    <div class="card-header" >Invite Friends&nbsp;&nbsp;<button type="button" class="btn btn-primary" class="button button5" ><i class="fa fa-plus"></i></button></div>
+    <div class="card-body">
+        <p class="card-text">Bring your productivity to the next level and collabarate with your collegues and friends</p>
+    </div>
+</div>
+
+

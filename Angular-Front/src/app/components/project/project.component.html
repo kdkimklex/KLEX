@@ -1,0 +1,19 @@
+<form (submit)="CreateProjectData()">
+  <fieldset>
+    <legend>New Project</legend>
+    <div class="form-group">
+      <small id="nameHelp" class="form-text text-muted">Please choose a new name and description,and select the people you want to work with.</small>
+      <input type="email" class="form-control"  aria-describedby="emailHelp" id="exampleInputUserName" placeholder="Project Name" name="projectname" [(ngModel)]="projectname">
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea">Example textarea</label>
+      <textarea class="form-control" id="exampleTextarea" placeholder="Description" rows="3" placeholder="Description (This is optional)"  name="description" [(ngModel)]="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Share the project with others</label>
+      <input type="email" class="form-control"  aria-describedby="emailHelp" id="exampleInputEmail1" placeholder="Enter email addresses"  name="email" [(ngModel)]="email">
+    </div>
+    <button type="cancel" class="btn btn-outline-secondary">Cancel</button>&nbsp; &nbsp;
+    <button typec ="submit" class="btn btn-primary" >Create Project</button>
+  </fieldset>
+</form>
